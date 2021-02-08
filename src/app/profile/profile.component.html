@@ -1,1 +1,57 @@
-<p>profile works!</p>
+<div class="container">
+  <div *ngIf="profile">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          User since: <small> {{profile.created_at|date}}</small> <br>
+          Name: <small> {{profile.name}} </small><br>
+          Username: <small>{{profile.login}}</small> <br>
+          <span *ngIf= 'profile.company'>, works at {{profile.company}}</span>
+         Location: <small> {{profile.location}}</small>
+        </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <img width="200" class="img-circle img-responsive" src="{{profile.avatar_url}}" alt="profile-img">
+        </div>
+        <div class="col-sm-6">
+          <ul class="list-group">
+            <li *ngIf = 'profile.bio' class="list-group-item" >
+               {{profile.bio}}
+            </li>
+            <li *ngIf = 'profile.hireable' class="list-group-item" >
+               {{profile.hireable}}
+            </li>
+            <li *ngIf = 'profile.blog' class="list-group-item" >
+              {{profile.blog}}
+           </li>
+           <li *ngIf = 'profile.email' class="list-group-item" >
+            Email: <a href="{{profile.email}}" target="_blank">{{profile.email}}</a>
+         </li>
+         <li *ngIf = 'profile.organizations_url' class="list-group-item" >
+          org: <a href="{{profile.organizations_url}}" target="_blank">{{profile.organizations_url}}</a>
+       </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <div >
+            <p>
+              <span class="label default">  {{profile.followers}} Followers  </span>
+              <span class="label primary">  Following {{profile.following}}  </span>
+              <span class="label success">  {{profile.public_gists}} Public Gists  </span>
+              <span class="label info">  {{profile.public_repos}} Public Repos  </span>
+            </p>
+            <p><a class="btn btn-success btn-sm" href="{{profile.html_url}}" target="_blank">View  Profile on GitHub </a></p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Repos</h3>
+                <div class="panel-body" *ngFor='let repo of '>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
