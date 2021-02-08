@@ -1,10 +1,5 @@
-img{
-  border-radius: 50px;
-}
-.container{
+.container-fluid{
   font-size: bold;
   font-weight: 800;
 }
-.panel{
-  top: 10px;
-}
+
