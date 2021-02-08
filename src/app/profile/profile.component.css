@@ -1,0 +1,10 @@
+img{
+  border-radius: 50px;
+}
+.container{
+  font-size: bold;
+  font-weight: 800;
+}
+.panel{
+  top: 10px;
+}
