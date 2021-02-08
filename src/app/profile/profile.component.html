@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container-fluid">
   <div *ngIf="profile">
-    <div class="panel panel-default">
-        <div class="panel-heading">
+    <div >
+        <div >
           User since: <small> {{profile.created_at|date}}</small> <br>
           Name: <small> {{profile.name}} </small><br>
           Username: <small>{{profile.login}}</small> <br>
@@ -9,29 +9,29 @@
          Location: <small> {{profile.location}}</small>
         </div>
       <div class="row">
-        <div class="col-sm-2">
+        <div class="col-md-2">
           <img width="200" class="img-circle img-responsive" src="{{profile.avatar_url}}" alt="profile-img">
         </div>
-        <div class="col-sm-6">
-          <ul class="list-group">
-            <li *ngIf = 'profile.bio' class="list-group-item" >
+        <div class="col-md-6">
+          <ul >
+            <li *ngIf = 'profile.bio' >
                {{profile.bio}}
             </li>
-            <li *ngIf = 'profile.hireable' class="list-group-item" >
+            <li *ngIf = 'profile.hireable' >
                {{profile.hireable}}
             </li>
-            <li *ngIf = 'profile.blog' class="list-group-item" >
+            <li *ngIf = 'profile.blog' >
               {{profile.blog}}
            </li>
-           <li *ngIf = 'profile.email' class="list-group-item" >
+           <li *ngIf = 'profile.email'  >
             Email: <a href="{{profile.email}}" target="_blank">{{profile.email}}</a>
          </li>
-         <li *ngIf = 'profile.organizations_url' class="list-group-item" >
+         <li *ngIf = 'profile.organizations_url' >
           org: <a href="{{profile.organizations_url}}" target="_blank">{{profile.organizations_url}}</a>
        </li>
           </ul>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <div >
             <p>
               <span class="label default">  {{profile.followers}} Followers  </span>
