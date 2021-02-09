@@ -1,1 +1,24 @@
-<p>repos works!</p>
+<div *ngIf='githubRepos' class="card mt-4">
+  <div class="card-header bg-dark text-white">
+    <h4>Github Repositories</h4>
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li *ngFor='let repo of githubRepos' class="list-group-item">
+         <div class="row">
+           <div class="col-md-4">
+            <a [href]="repo.html_url" class="text-primary font-weight-bolder" target="_blank">{{repo.name}} </a>
+           </div>
+           <div class="col-md-4">
+            Language: <span class="badge ">{{repo.language}} </span>
+           </div>
+           <div class="col-md-4">
+             <span class="badge "> {{repo.stargazers_count}} Stars </span>
+           </div>
+         </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
