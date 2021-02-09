@@ -11,6 +11,7 @@ import { ReposComponent } from './repos/repos.component';
 import { ProfileDataComponent } from './profile-data/profile-data.component';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { SearchComponent } from './search/search.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
