@@ -1,10 +1,10 @@
 <div *ngIf='githubRepos' class="card mt-4">
-  <div class="card-header bg-dark text-white">
+  <div class="card-header  text-white">
     <h4>Github Repositories</h4>
   </div>
-  <div class="card-body">
-    <ul class="list-group">
-      <li *ngFor='let repo of githubRepos' class="list-group-item">
+  <div class="card-body myCard">
+    <ul class="list-group myCard">
+      <li *ngFor='let repo of githubRepos' class="myCard list-group-item">
          <div class="row">
            <div class="col-md-4">
             <a [href]="repo.html_url" class="text-primary font-weight-bolder" target="_blank">{{repo.name}} </a>

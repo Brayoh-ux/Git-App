@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.btn{
+  background-image: linear-gradient(140deg, #00e640,#00b16a,#4ecdc4);
+  animation: anim 5s infinite;
+}
+.btn1{
+  background-image: linear-gradient(100deg, #052941,#1659bd,#0a73a3, #92cde9);
+  animation: anim 1s infinite;
+  margin-bottom: 10vmin;
+}
+@keyframes anim{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+.myCard{
+  text-align: left;
+}
+.row{
+  margin-top: 5vmin;
+}
+h1{
+  font-family: 'Bangers', cursive;
+  text-transform: uppercase;
+  font-size: 5vmin;
+  margin-top: 10vmin;
+}

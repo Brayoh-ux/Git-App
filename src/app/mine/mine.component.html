@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="card ">
+      <img [src]="myRepo.avatar_url" class="img-fluid" >
+      <div class="card-body">
+        <h4 class="card-title">
+          {{myRepo.name}}
+        </h4>
+        <p class="card-text"><small>{{myRepo.bio}}</small> </p>
+        <a [href]="myRepo.html_url" target="_blank" class="btn btn-success btn-sm">Profile</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-8">
+    <div class="card ">
+      <div class="card-header">
+        <span class="badge badge-primary mr-3">{{myRepo.followers}} Followers </span>
+        <span class="badge badge-success mr-3">{{myRepo.public_repos}} Repos </span>
+        <span class="badge badge-warning mr-3">{{myRepo.public_gists}} Gists </span>
+        <span class="badge badge-danger mr-3">{{myRepo.following}}  Following </span>
+      </div>
+      <div class="card-body myCard">
+        <ul class="list-group">
+          <li class="list-group-item">
+            User Name : <small><span class="font-weight-bold"> {{myRepo.name}} </span></small>
+          </li>
+          <li class="list-group-item">
+            Location : <small>{{myRepo.location}}</small>
+          </li>
+          <li class="list-group-item">
+            Email : <small> {{myRepo.email}}</small>
+          </li>
+          <li class="list-group-item">
+            Company : <small>{{myRepo.company}}</small>
+          </li>
+          <li class="list-group-item">
+            Blog : <a [href]="myRepo.blog" target="_blank"> <small>{{myRepo.blog}}</small></a>
+          </li>
+          <li class="list-group-item">
+            Member Since : <small>  {{myRepo.created_at|date}}</small>
+          </li>
+          <li class="list-group-item">
+             Hireable : <small> {{myRepo.hireable}}</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div><br>
+<br>
+<br>
+<hr>
+<h1 class="btn btn1 btn-success"> Search Results</h1>

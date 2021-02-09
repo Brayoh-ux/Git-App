@@ -1,0 +1,15 @@
+.btn{
+  background-image: linear-gradient(140deg, #00e640,#00b16a,#4ecdc4);
+  animation: anim 5s infinite;
+}
+@keyframes anim{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}

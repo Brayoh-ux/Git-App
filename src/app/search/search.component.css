@@ -57,6 +57,9 @@ p{
 }
 footer{
   margin-top: 10vmin;
+  padding-top: 5vmin;
   font-family: 'Courgette', cursive;
   font-size: 12vmin;
+  color: rgb(2, 2, 51);
+  margin-bottom: 12vmin;
 }

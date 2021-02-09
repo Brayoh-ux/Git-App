@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid " >
   <h1>Git Google App</h1>
   <p>Search Your repos <br> on click! </p>
   <div class="card-body container">
@@ -8,11 +8,19 @@
         <input type="submit" value="Search" class="btn btn-secondary btn-sm ">
       </div>
     </form>
+    <br>
+    <br>
+    <br>
+    <hr>
     <div class="row">
       <div class="col">
         <app-profile [githubProfile]="gihubProfile"></app-profile>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <hr>
     <div class="row">
       <div class="col">
         <app-repos [githubRepos]='githubRepos' ></app-repos>
@@ -23,9 +31,11 @@
     <div class="row">
       <div class="col-md-4">
       </div>
-      <div class="col-md-4">
+      <div class=" col-md-4">
         <h4>
-          Copyright :
+          MIT License
+
+          Copyright (c) 2021 Brian M.Nderitu
         </h4>
 
       </div>

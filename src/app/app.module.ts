@@ -1,3 +1,4 @@
+import { MineService } from './services/mine.service';
 import { ProfileService } from './services/profile.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,7 +12,8 @@ import { ReposComponent } from './repos/repos.component';
 import { ProfileDataComponent } from './profile-data/profile-data.component';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { SearchComponent } from './search/search.component';
-import { from } from 'rxjs';
+
+import { MineComponent } from './mine/mine.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { from } from 'rxjs';
     ReposComponent,
     ProfileDataComponent,
     ProfileCardComponent,
-    SearchComponent
+    SearchComponent,
+    MineComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,7 @@ import { from } from 'rxjs';
     HttpClientModule,
     FormsModule
   ],
-  providers: [ProfileService],
+  providers: [ProfileService, MineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

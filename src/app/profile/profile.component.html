@@ -1,11 +1,13 @@
-<div class="mt-3 container-fluid" *ngIf="githubProfile">
+<div class="mt-3 container-fluid" >
+  <div class="row">
+    <app-mine [githubProfile]='githubProfile'></app-mine>
+  </div>
   <div class="row">
     <div class="col-md-3">
-
-      <app-profile-card [githubProfile]="githubProfile"></app-profile-card>
+      <app-profile-card *ngIf="githubProfile" [githubProfile]="githubProfile"></app-profile-card>
     </div>
     <div class="col-md-9">
-      <app-profile-data [githubProfile]="githubProfile"></app-profile-data>
+      <app-profile-data *ngIf="githubProfile" [githubProfile]="githubProfile"></app-profile-data>
     </div>
   </div>
 </div>
