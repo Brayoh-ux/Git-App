@@ -22,7 +22,7 @@ export class ProfileService {
 
   //  github profile
    getProfile(search): Observable<any[]>{
-    let dataURL = `https://api.github.com/users/${search}?access_token=${environment.token}`;
+    let dataURL = `https://api.github.com/users/${search}?client_id=${environment.AppId}&client_secret${environment.clientId}`;
     return this.http.get<any>(dataURL);
    }
 
@@ -30,7 +30,7 @@ export class ProfileService {
   //  gihub repo
 
   getRepos(search):Observable<any[]>{
-    let dataURL = `https://api.github.com/users/${search}/repos?access_token=${environment.token}`;
+    let dataURL = `https://api.github.com/users/${search}/repos?client_id=${environment.AppId}&client_secret${environment.clientId}`;
     return this.http.get<any>(dataURL);
   }
 }

@@ -13,6 +13,6 @@ export class MineService {
     this.username = 'BrianMbugua5693';
   }
   getMyInfo(){
-    return this.http.get('https://api.github.com/users/' + this.username + "?access_token="+ environment.token);
+    return this.http.get('https://api.github.com/users/' + this.username + "?client_id="+ environment.AppId + "&client_secret=" + environment.clientId);
   }
 }

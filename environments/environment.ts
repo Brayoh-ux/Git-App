@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  token: '9137deaf77664208ce18ea23f6901eb1faa755d4'
+  AppId: '99530',
+  clientId: 'Iv1.93f1ad8fd7f9d0b3'
 };
 
 /*

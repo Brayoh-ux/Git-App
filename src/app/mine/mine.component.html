@@ -41,7 +41,7 @@
             Member Since : <small>  {{myRepo.created_at|date}}</small>
           </li>
           <li class="list-group-item">
-             Hireable : <small> {{myRepo.hireable}}</small>
+             Repositories : <a [href]="myRepo.html_url " target="_blank" >{{myRepo.html_url}} </a>
           </li>
         </ul>
       </div>
