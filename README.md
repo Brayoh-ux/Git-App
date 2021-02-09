@@ -1,27 +1,28 @@
+# Author
+Brian M. Nderitu
+
 # GitApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+This project was generated with [Angular CLI] version 11.1.2.
 
-## Development server
+## BBD
+* Enter Username
+* Press search button or Enter on keyboard
+* The app displays repos, followers, stars, followings, email , location, company among other things,
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Installation
+* Go to www.gitbub.com/users/BrianMbugua5693/repos/Git-App
+* clone to your local machine
+* run npm install 
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app automatically reloads if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Contact
+* <a href="gmail.com">Email me<a>
+* <a href="github.com/BrianMbugua5693">Github<a>
 
-## Build
+# Lisence
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* MIT License
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    Copyright (c) 2021 Brian M.Nderitu
