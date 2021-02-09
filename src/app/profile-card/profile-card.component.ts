@@ -1,3 +1,4 @@
+import { Users } from './../classes/users';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProfileCardComponent implements OnInit {
 
   @Input() githubProfile: any;
+
 
   constructor() { }
 
