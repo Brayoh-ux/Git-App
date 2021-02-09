@@ -18,6 +18,10 @@ export class SearchComponent implements OnInit {
 
   // github profile get
   searchUser(){
+    if(this.githubUser === undefined || this.githubUser == ' '){
+      alert('Please enter username');
+      return;
+    }
     this.service.getProfile(this.githubUser).subscribe((response)=>{
       this.gihubProfile = response;
     });
