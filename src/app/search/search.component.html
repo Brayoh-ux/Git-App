@@ -1,11 +1,10 @@
 <div class="container-fluid">
   <h1>Git Google App</h1>
-  <p>Search Your repos on on click! </p>
-  <h3>Github User search</h3>
+  <p>Search Your repos <br> on click! </p>
   <div class="card-body container">
     <form (submit)='searchUser()' class="form-inline">
       <div class="form-group search">
-        <input [(ngModel)]="githubUser" name="user" type="search" size="70" class="form-control" placeholder="Github user" required><span>bro</span>
+        <input [(ngModel)]="githubUser" name="user" type="search" size="70" class="form-control input" placeholder="Github user" required><span>br</span>
         <input type="submit" value="Search" class="btn btn-secondary btn-sm ">
       </div>
     </form>
@@ -20,4 +19,17 @@
       </div>
     </div>
   </div>
+  <footer>
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <h4>
+          Copyright :
+        </h4>
+
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </footer>
 </div>

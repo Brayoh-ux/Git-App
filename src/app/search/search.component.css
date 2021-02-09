@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
 .container-fluid, .row1{
   background-image: linear-gradient(130deg, #1f3a93, #1e8bc3, #19b5fe, #22a7f0 , #81cfe0);
   background-size: 400%;
@@ -16,8 +20,13 @@ span{
   background-color: rgba(21, 153, 230, 0.452);
   color: aliceblue;
 }
+input{
+  font-family: 'Bangers', cursive;
+}
 ::placeholder {
   color: aliceblue;
+  font-style: italic;
+  font-family: 'Courgette', cursive;
 }
 @keyframes bganimation {
   0%{
@@ -34,5 +43,20 @@ span{
   padding-top: 8vmin;
   padding-bottom: 5vmin;
   font-weight: 800;
+}
 
+h1, p, h3{
+  font-family: 'Bangers', cursive;
+}
+h1{
+  font-size: 15vmin;
+  color: azure ;
+}
+p{
+  font-size: 5vmin;
+}
+footer{
+  margin-top: 10vmin;
+  font-family: 'Courgette', cursive;
+  font-size: 12vmin;
 }
