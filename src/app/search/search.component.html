@@ -1,27 +1,23 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card-header bg-secondary text-white">
-        <h3>Github User search</h3>
+<div class="container-fluid">
+  <h1>Git Google App</h1>
+  <p>Search Your repos on on click! </p>
+  <h3>Github User search</h3>
+  <div class="card-body container">
+    <form (submit)='searchUser()' class="form-inline">
+      <div class="form-group search">
+        <input [(ngModel)]="githubUser" name="user" type="search" size="70" class="form-control" placeholder="Github user" required><span>bro</span>
+        <input type="submit" value="Search" class="btn btn-secondary btn-sm ">
       </div>
-      <div class="card-body">
-        <form (submit)='searchUser()' class="form-inline">
-          <div class="form-group">
-            <input [(ngModel)]="githubUser" name="user" type="search" size="45" class="form-control" placeholder="Github user"><span>bro</span>
-            <input type="submit" value="Search" class="btn btn-secondary btn-sm ">
-          </div>
-        </form>
+    </form>
+    <div class="row">
+      <div class="col">
+        <app-profile [githubProfile]="gihubProfile"></app-profile>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <app-profile [githubProfile]="gihubProfile"></app-profile>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <app-repos></app-repos>
+    <div class="row">
+      <div class="col">
+        <app-repos [githubRepos]='githubRepos' ></app-repos>
+      </div>
     </div>
   </div>
 </div>
